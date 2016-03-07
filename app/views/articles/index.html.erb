@@ -1,0 +1,6 @@
+<h1>These are the Articles</h1>
+<ul>
+<% @articles.each do |article| %>
+  <li><%= article.title %> is in a status of <%= article.status %>.</li>
+<% end %>
+</ul>
