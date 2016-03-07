@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160307214149) do
+ActiveRecord::Schema.define(version: 20160307221605) do
 
   create_table "articles", force: :cascade do |t|
     t.datetime "created_at",     null: false
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20160307214149) do
     t.string   "author"
     t.date     "date_published"
     t.string   "status"
+    t.text     "content"
   end
 
 end
